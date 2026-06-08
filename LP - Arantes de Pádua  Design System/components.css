@@ -1,0 +1,161 @@
+/* ============================================================
+   Arantes de Pádua — Component library
+   Reusable classes for buttons, cards, inputs, badges, links.
+   Depends on tokens (colors/typography/spacing/base).
+   ============================================================ */
+
+/* ---------------- Buttons ---------------- */
+.btn {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: 0.875rem;
+  letter-spacing: var(--tr-wide);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+  padding: 15px 30px;
+  border-radius: var(--r-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background var(--dur-base) var(--ease-out),
+              color var(--dur-base) var(--ease-out),
+              border-color var(--dur-base) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out);
+  text-decoration: none;
+  line-height: 1;
+}
+.btn:active { transform: translateY(1px); }
+.btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+.btn--primary { background: var(--emerald-700); color: var(--platinum-100); }
+.btn--primary:hover { background: var(--emerald-600); }
+.btn--primary:active { background: var(--emerald-800); }
+
+.btn--ghost { background: transparent; color: var(--emerald-700); border-color: var(--hairline-on-light-strong); }
+.btn--ghost:hover { border-color: var(--emerald-700); background: var(--emerald-50); }
+
+/* On dark surfaces */
+.on-dark .btn--primary,
+.btn--metal { background: var(--platinum-200); color: var(--emerald-900); }
+.on-dark .btn--primary:hover,
+.btn--metal:hover { background: var(--platinum-100); }
+
+.on-dark .btn--ghost { color: var(--platinum-100); border-color: var(--hairline-on-dark-strong); }
+.on-dark .btn--ghost:hover { border-color: var(--platinum-300); background: rgba(240,241,236,.06); }
+.on-dark .btn:focus-visible { box-shadow: var(--focus-ring-dark); }
+
+/* Text link with metallic underline */
+.link-arrow {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: 0.875rem;
+  letter-spacing: var(--tr-wide);
+  text-transform: uppercase;
+  color: var(--emerald-700);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--hairline-on-light-strong);
+  transition: gap var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
+}
+.link-arrow:hover { gap: var(--s-4); border-color: var(--emerald-700); }
+.link-arrow svg { width: 16px; height: 16px; }
+.on-dark .link-arrow { color: var(--platinum-100); border-color: var(--hairline-on-dark-strong); }
+.on-dark .link-arrow:hover { border-color: var(--platinum-300); }
+
+/* ---------------- Badges / chips ---------------- */
+.badge {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tr-wide);
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  background: var(--emerald-50);
+  color: var(--emerald-700);
+  border: 1px solid var(--emerald-100);
+}
+.on-dark .badge { background: rgba(240,241,236,.08); color: var(--platinum-200); border-color: var(--hairline-on-dark); }
+
+/* ---------------- Cards ---------------- */
+.card {
+  background: var(--surface-paper);
+  border: 1px solid var(--hairline-on-light);
+  border-radius: var(--r-lg);
+  padding: var(--s-8);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
+}
+.card--interactive:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--emerald-200); }
+
+/* Practice-area card with metal index number */
+.area-card { position: relative; overflow: hidden; }
+.area-card .area-num {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: var(--fw-regular);
+  font-style: italic;
+  color: var(--platinum-400);
+  line-height: 1;
+}
+.area-card h3 { font-size: var(--fs-h4); margin: var(--s-5) 0 var(--s-3); }
+.area-card p { font-size: var(--fs-sm); color: var(--text-muted); line-height: var(--lh-body); }
+
+/* Card on emerald */
+.card--dark {
+  background: var(--surface-raised);
+  border: 1px solid var(--hairline-on-dark);
+  box-shadow: var(--shadow-card-dark);
+  color: var(--text-on-dark);
+}
+.card--dark h3 { color: var(--text-on-dark-strong); }
+.card--dark p { color: var(--text-on-dark-muted); }
+
+/* ---------------- Inputs ---------------- */
+.field { display: flex; flex-direction: column; gap: var(--s-2); }
+.field label {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tr-wide);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.input, .textarea {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--text-strong);
+  background: var(--surface-paper);
+  border: 1px solid var(--hairline-on-light-strong);
+  border-radius: var(--r-sm);
+  padding: 13px 15px;
+  transition: border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out);
+  width: 100%;
+}
+.input::placeholder, .textarea::placeholder { color: var(--text-faint); }
+.input:focus, .textarea:focus { outline: none; border-color: var(--emerald-500); box-shadow: 0 0 0 3px var(--emerald-50); }
+.textarea { resize: vertical; min-height: 120px; }
+
+/* On dark */
+.on-dark .field label { color: var(--text-on-dark-muted); }
+.on-dark .input, .on-dark .textarea {
+  background: rgba(5,23,18,.35);
+  border-color: var(--hairline-on-dark-strong);
+  color: var(--text-on-dark);
+}
+.on-dark .input::placeholder, .on-dark .textarea::placeholder { color: var(--text-on-dark-faint); }
+.on-dark .input:focus, .on-dark .textarea:focus { border-color: var(--platinum-400); box-shadow: 0 0 0 3px rgba(240,241,236,.08); }
+
+/* ---------------- Stat ---------------- */
+.stat { display: flex; flex-direction: column; gap: var(--s-1); }
+.stat .num { font-family: var(--font-display); font-size: clamp(2.4rem, 4vw, 3.4rem); font-weight: var(--fw-semibold); line-height: 1; color: var(--emerald-700); }
+.on-dark .stat .num { color: var(--platinum-100); }
+.stat .lbl { font-family: var(--font-sans); font-size: var(--fs-xs); letter-spacing: var(--tr-wide); text-transform: uppercase; color: var(--text-muted); }
+.on-dark .stat .lbl { color: var(--text-on-dark-muted); }

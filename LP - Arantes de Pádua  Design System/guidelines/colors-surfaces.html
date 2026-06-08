@@ -1,0 +1,44 @@
+<!-- @dsCard group="Colors" viewport="700x230" name="Two surfaces" subtitle="The brand lives in two worlds: emerald authority + ivory clarity" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--sand-100); padding: 22px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .panel { border-radius: var(--r-lg); padding: 22px; min-height: 150px; display: flex; flex-direction: column; justify-content: space-between; }
+  .dark { background: var(--surface-brand); box-shadow: var(--shadow-card-dark); }
+  .light { background: var(--surface-paper); border: 1px solid var(--hairline-on-light); box-shadow: var(--shadow-sm); }
+  .eb { font-family: var(--font-sans); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; }
+  .dark .eb { color: var(--metal); } .light .eb { color: var(--emerald-600); }
+  h3 { font-family: var(--font-display); font-size: 26px; font-weight: 600; margin: 10px 0 4px; }
+  .dark h3 { color: var(--text-on-dark-strong); } .light h3 { color: var(--text-strong); }
+  .body { font-family: var(--font-body); font-size: 13px; line-height: 1.6; }
+  .dark .body { color: var(--text-on-dark-muted); } .light .body { color: var(--text-muted); }
+  .chip { font-family: var(--font-mono); font-size: 10px; padding: 3px 8px; border-radius: var(--r-pill); align-self: flex-start; }
+  .dark .chip { background: rgba(240,241,236,.1); color: var(--platinum-200); }
+  .light .chip { background: var(--sand-100); color: var(--ink-600); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="panel dark on-dark">
+      <span class="eb">Autoridade</span>
+      <div>
+        <h3>Defesa <span class="serif-accent">precisa.</span></h3>
+        <p class="body">Superfície escura para hero, rodapé e momentos de marca.</p>
+      </div>
+      <span class="chip">--surface-brand · #0E332A</span>
+    </div>
+    <div class="panel light">
+      <span class="eb">Clareza</span>
+      <div>
+        <h3>Conteúdo <span class="serif-accent">legível.</span></h3>
+        <p class="body">Superfície clara, marfim quente, para texto e leitura longa.</p>
+      </div>
+      <span class="chip">--surface-light · #FAF9F4</span>
+    </div>
+  </div>
+</body>
+</html>

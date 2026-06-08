@@ -1,0 +1,96 @@
+/* ============================================================
+   Arantes de Pádua — Base element styles & shared utilities
+   Foundational defaults so cards, components and the landing
+   page share one type rhythm. Import last.
+   ============================================================ */
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+  background: var(--surface-light);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--tr-tight);
+  color: var(--text-strong);
+  margin: 0;
+}
+
+p { margin: 0; }
+
+a { color: inherit; text-decoration: none; }
+
+img { display: block; max-width: 100%; }
+
+::selection { background: var(--emerald-600); color: var(--ivory); }
+
+/* ---- Shared utility classes ---- */
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--metal);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+/* Eyebrow with a metallic tick before the label */
+.eyebrow--tick::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--metal-grad-soft);
+  display: inline-block;
+}
+
+.lead {
+  font-size: var(--fs-lead);
+  line-height: var(--lh-snug);
+  color: var(--text-muted);
+  font-weight: var(--fw-regular);
+}
+
+/* Metallic hairline divider (echoes the ADVOGADOS rule in the logo) */
+.metal-rule {
+  height: 1px;
+  border: 0;
+  background: var(--metal-grad-soft);
+  width: 100%;
+}
+
+/* Display serif accent — italic emphasis word inside headlines */
+.serif-accent {
+  font-style: italic;
+  font-weight: var(--fw-medium);
+  color: var(--emerald-600);
+}
+
+/* On dark surfaces, the accent goes platinum */
+.on-dark .serif-accent { color: var(--metal-bright); }
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-pad-x);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

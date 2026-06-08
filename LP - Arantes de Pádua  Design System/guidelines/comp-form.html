@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="700x260" name="Form fields" subtitle="Inputs, textarea, label, badge — on emerald (contact context)" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  body { margin: 0; background: var(--surface-brand); padding: 30px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: 600px; }
+  .full { grid-column: 1 / -1; }
+</style>
+</head>
+<body class="on-dark">
+  <div class="grid">
+    <div class="field"><label>Nome</label><input class="input" placeholder="Seu nome completo"></div>
+    <div class="field"><label>E-mail</label><input class="input" placeholder="voce@empresa.com.br"></div>
+    <div class="field full"><label>Como podemos ajudar?</label><textarea class="textarea" placeholder="Descreva brevemente sua demanda"></textarea></div>
+  </div>
+</body>
+</html>

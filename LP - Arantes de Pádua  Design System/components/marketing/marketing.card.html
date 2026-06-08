@@ -1,0 +1,54 @@
+<!-- @dsCard group="Components" viewport="700x440" name="Marketing — practice, stats, partner, quote" subtitle="Practice cards, proof metrics, partner portrait, testimonial" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; background: var(--ivory); padding: 26px; }
+  .lbl { font-family: var(--font-sans); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 12px; }
+  .block { margin-bottom: 26px; }
+  .pcards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pcard { position: relative; background: var(--surface-paper); border: 1px solid var(--hairline-on-light); border-radius: var(--r-md); padding: 28px 26px; box-shadow: var(--shadow-xs); }
+  .pcard .num { position:absolute; top:20px; right:22px; font-family:var(--font-display); font-size:20px; color:var(--platinum-400); }
+  .pcard .ic { color: var(--emerald-600); margin-bottom: 16px; display:flex; }
+  .pcard h3 { font-family:var(--font-display); font-weight:600; font-size:var(--fs-h4); color:var(--text-strong); margin:0 0 8px; }
+  .pcard p { font-family:var(--font-body); font-size:var(--fs-sm); line-height:1.6; color:var(--text-muted); margin:0; }
+
+  .bottom { display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; align-items:start; }
+  .stats { background: var(--surface-brand); border-radius: var(--r-md); padding: 30px; display:grid; grid-template-columns:1fr 1fr; gap: 26px; box-shadow:var(--shadow-card-dark); }
+  .stat .v { font-family:var(--font-display); font-weight:600; font-size:46px; line-height:1; letter-spacing:-.02em; color:var(--platinum-100); }
+  .stat .l { font-family:var(--font-sans); font-weight:500; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--emerald-200); margin-top:10px; }
+
+  blockquote { margin:0; background:var(--surface-paper); border:1px solid var(--hairline-on-light); border-radius:var(--r-md); padding:30px 28px 24px; box-shadow:var(--shadow-xs); }
+  blockquote .mark { font-family:var(--font-display); font-size:64px; line-height:.6; color:var(--platinum-400); display:block; height:28px; }
+  blockquote p { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:1.3rem; line-height:1.4; color:var(--text-strong); margin:0 0 18px; }
+  blockquote .au { font-family:var(--font-sans); font-weight:600; font-size:var(--fs-sm); color:var(--text-strong); }
+  blockquote .ro { font-family:var(--font-body); font-size:var(--fs-xs); color:var(--text-muted); }
+</style>
+</head>
+<body>
+  <div class="block">
+    <p class="lbl">Practice cards</p>
+    <div class="pcards">
+      <div class="pcard"><span class="num">01</span><span class="ic"><i data-lucide="scale" style="width:30px;height:30px"></i></span><h3>Contencioso Empresarial</h3><p>Defesa em litígios complexos, com leitura estratégica de risco e foco em resultado.</p></div>
+      <div class="pcard"><span class="num">02</span><span class="ic"><i data-lucide="file-signature" style="width:30px;height:30px"></i></span><h3>Contratos & Negócios</h3><p>Estruturação, revisão e negociação de contratos que protegem a operação.</p></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div>
+      <p class="lbl">Proof metrics</p>
+      <div class="stats">
+        <div class="stat"><div class="v">+15</div><div class="l">Anos de atuação</div></div>
+        <div class="stat"><div class="v">R$ 80M</div><div class="l">Em causas conduzidas</div></div>
+      </div>
+    </div>
+    <div>
+      <p class="lbl">Testimonial</p>
+      <blockquote><span class="mark">&ldquo;</span><p>Conduziram nossa reestruturação com rigor e tranquilidade. Resultado acima do esperado.</p><div class="au">Diretor Jurídico</div><div class="ro">Indústria de bens de consumo</div></blockquote>
+    </div>
+  </div>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

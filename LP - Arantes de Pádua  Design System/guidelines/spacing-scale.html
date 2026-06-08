@@ -1,0 +1,31 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Spacing scale" subtitle="4px base grid" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--ivory); padding: 24px 28px; }
+  .meta { font-family: var(--font-sans); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 18px; }
+  .row { display: flex; align-items: flex-end; gap: 14px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .bar { background: var(--emerald-600); border-radius: var(--r-xs); width: 100%; }
+  .lab { font-family: var(--font-sans); font-size: 10px; color: var(--text-muted); letter-spacing: .04em; }
+  .px { font-family: var(--font-mono); font-size: 9px; color: var(--text-faint); }
+</style>
+</head>
+<body>
+  <p class="meta">Spacing · --s-*</p>
+  <div class="row">
+    <div class="item"><div class="bar" style="height:4px;width:18px"></div><span class="lab">s-1</span><span class="px">4</span></div>
+    <div class="item"><div class="bar" style="height:8px;width:18px"></div><span class="lab">s-2</span><span class="px">8</span></div>
+    <div class="item"><div class="bar" style="height:16px;width:18px"></div><span class="lab">s-4</span><span class="px">16</span></div>
+    <div class="item"><div class="bar" style="height:24px;width:18px"></div><span class="lab">s-6</span><span class="px">24</span></div>
+    <div class="item"><div class="bar" style="height:32px;width:18px"></div><span class="lab">s-8</span><span class="px">32</span></div>
+    <div class="item"><div class="bar" style="height:48px;width:18px"></div><span class="lab">s-12</span><span class="px">48</span></div>
+    <div class="item"><div class="bar" style="height:64px;width:18px"></div><span class="lab">s-16</span><span class="px">64</span></div>
+    <div class="item"><div class="bar" style="height:80px;width:18px"></div><span class="lab">s-20</span><span class="px">80</span></div>
+    <div class="item"><div class="bar" style="height:96px;width:18px"></div><span class="lab">s-24</span><span class="px">96</span></div>
+  </div>
+</body>
+</html>

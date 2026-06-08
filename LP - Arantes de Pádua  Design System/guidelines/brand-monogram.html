@@ -1,0 +1,33 @@
+<!-- @dsCard group="Brand" viewport="700x240" name="Monogram & clear space" subtitle="The AP mark for avatars, favicons, social · keep clear space = cap height" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--ivory); padding: 30px; display: flex; gap: 30px; align-items: center; justify-content: center; }
+  .tile { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .mark { display: grid; place-items: center; border-radius: var(--r-lg); }
+  .on-em { background: var(--surface-brand); width: 130px; height: 130px; box-shadow: var(--shadow-card-dark); }
+  .on-iv { background: var(--surface-paper); width: 130px; height: 130px; border: 1px solid var(--hairline-on-light); box-shadow: var(--shadow-sm); }
+  .on-em img { width: 86px; }
+  .on-iv img { width: 86px; filter: brightness(.35) saturate(.7) sepia(.4) hue-rotate(95deg); }
+  .lbl { font-family: var(--font-sans); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-faint); }
+  .circle { border-radius: 999px; }
+</style>
+</head>
+<body>
+  <div class="tile">
+    <div class="mark on-em"><img src="../assets/logo-ap-mark.webp" alt="Monograma AP"></div>
+    <span class="lbl">Primary · on emerald</span>
+  </div>
+  <div class="tile">
+    <div class="mark on-em circle"><img src="../assets/logo-ap-mark.webp" alt="Monograma AP"></div>
+    <span class="lbl">Avatar · circle</span>
+  </div>
+  <div class="tile">
+    <div class="mark on-iv"><img src="../assets/logo-ap-mark.webp" alt="Monograma AP"></div>
+    <span class="lbl">Reversed · on ivory</span>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- @dsCard group="Colors" viewport="700x200" name="Platinum & metallic" subtitle="The silver monogram — used for emphasis, hairlines, dividers" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--ivory); padding: 22px; }
+  .cap { font-family: var(--font-sans); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 12px; }
+  .row { display: grid; grid-template-columns: repeat(8, 1fr); gap: 0; border-radius: var(--r-md); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .sw { aspect-ratio: 1 / 1.1; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; }
+  .sw span { font-family: var(--font-sans); font-size: 10px; letter-spacing: .04em; }
+  .sw .hex { font-size: 9px; opacity: .75; }
+  .lo { color: var(--ink-700); } .hi { color: var(--platinum-100); }
+  .grad { margin-top: 14px; height: 30px; border-radius: var(--r-sm); background: var(--metal-grad); box-shadow: var(--shadow-xs); display:flex; align-items:center; padding-left:12px; }
+  .grad span { font-family: var(--font-sans); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #2d3a35; }
+</style>
+</head>
+<body>
+  <p class="cap">Platinum · metallic accent</p>
+  <div class="row">
+    <div class="sw hi" style="background:#565a53"><span>800</span><span class="hex">565A53</span></div>
+    <div class="sw hi" style="background:#6e726b"><span>700</span><span class="hex">6E726B</span></div>
+    <div class="sw hi" style="background:#888c84"><span>600</span><span class="hex">888C84</span></div>
+    <div class="sw lo" style="background:#a5a8a0"><span>500</span><span class="hex">A5A8A0</span></div>
+    <div class="sw lo" style="background:#bcbfb7"><span>400</span><span class="hex">BCBFB7</span></div>
+    <div class="sw lo" style="background:#d2d4cd"><span>300</span><span class="hex">D2D4CD</span></div>
+    <div class="sw lo" style="background:#e3e4df"><span>200</span><span class="hex">E3E4DF</span></div>
+    <div class="sw lo" style="background:#f0f1ec"><span>100</span><span class="hex">F0F1EC</span></div>
+  </div>
+  <div class="grad"><span>--metal-grad · used for the monogram sheen & dividers</span></div>
+</body>
+</html>

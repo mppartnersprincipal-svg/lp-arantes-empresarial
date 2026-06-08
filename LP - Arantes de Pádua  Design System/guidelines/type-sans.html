@@ -1,0 +1,27 @@
+<!-- @dsCard group="Type" viewport="700x230" name="Sans — Jost (labels & UI)" subtitle="Geometric sans echoing the AP wordmark — eyebrows, nav, buttons" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--ivory); padding: 26px 28px; }
+  .meta { font-family: var(--font-sans); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 16px; }
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .eyebrow-demo { font-family: var(--font-sans); font-weight: 500; font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--emerald-600); }
+  .nav-demo { font-family: var(--font-sans); font-weight: 400; font-size: 15px; letter-spacing: .04em; color: var(--ink-700); display: flex; gap: 28px; }
+  .label-demo { font-family: var(--font-sans); font-weight: 600; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-900); }
+  .word { font-family: var(--font-sans); font-weight: 300; font-size: 28px; letter-spacing: .3em; color: var(--ink-800); text-transform: uppercase; }
+  .tag { font-family: var(--font-sans); font-size: 10px; color: var(--text-faint); letter-spacing: .08em; display: block; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <p class="meta">Jost · sans / structural</p>
+  <div class="stack">
+    <div><span class="word">Arantes</span><span class="tag">300 · tracking .3em — wordmark echo</span></div>
+    <div><span class="eyebrow-demo">Direito Empresarial</span><span class="tag">500 · tracking .22em — eyebrow</span></div>
+    <div><span class="label-demo">Agendar diagnóstico</span><span class="tag">600 · tracking .08em — button / label</span></div>
+    <div><nav class="nav-demo"><span>Atuação</span><span>Sócios</span><span>Cases</span><span>Contato</span></nav><span class="tag">400 · nav</span></div>
+  </div>
+</body>
+</html>

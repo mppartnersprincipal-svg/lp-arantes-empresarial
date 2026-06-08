@@ -1,0 +1,13 @@
+# ============================================================
+# Materiais-fonte pesados — não necessários para o site/deploy
+# ============================================================
+Fotos dos Advogados/
+LP - Arantes de Pádua  Design System/uploads/
+LP - Arantes de Pádua  Design System/assets/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+*.log

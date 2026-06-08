@@ -1,0 +1,98 @@
+/* ============================================================
+   Arantes de Pádua — Color Tokens
+   Extracted from the brand logo: deep emerald + platinum silver.
+   Two worlds: dark emerald (authority) and warm ivory (clarity).
+   ============================================================ */
+
+:root {
+  /* --- Emerald scale (brand green; --emerald-700 is the logo field) --- */
+  --emerald-950: #051712;
+  --emerald-900: #07211b;
+  --emerald-800: #0b2c24;
+  --emerald-700: #0e332a; /* brand base — the logo background */
+  --emerald-600: #134b3c;
+  --emerald-500: #1a6450;
+  --emerald-400: #2e826a;
+  --emerald-300: #57a48d;
+  --emerald-200: #95c6b6;
+  --emerald-100: #cde4dc;
+  --emerald-50:  #ecf4f0;
+
+  /* --- Platinum / silver scale (the metallic monogram) --- */
+  --platinum-800: #565a53;
+  --platinum-700: #6e726b;
+  --platinum-600: #888c84;
+  --platinum-500: #a5a8a0; /* base metal sampled from the mark */
+  --platinum-400: #bcbfb7;
+  --platinum-300: #d2d4cd;
+  --platinum-200: #e3e4df;
+  --platinum-100: #f0f1ec;
+
+  /* --- Warm neutrals (ivory / paper / sand) — pairs with the warm office imagery --- */
+  --paper:    #ffffff;
+  --ivory:    #faf9f4;
+  --sand-100: #f2efe7;
+  --sand-200: #e7e2d6;
+  --sand-300: #d8d1c1;
+
+  /* --- Ink (green-tinted charcoals for text on light) --- */
+  --ink-900: #13201c;
+  --ink-800: #1d2c27;
+  --ink-700: #2d3a35;
+  --ink-600: #44514b;
+  --ink-500: #5d6862;
+  --ink-400: #828b85;
+  --ink-300: #a7aea9;
+
+  /* --- Metallic gradient (for hairlines, dividers, mark accents) --- */
+  --metal-grad: linear-gradient(135deg, #6e726b 0%, #d2d4cd 28%, #f0f1ec 50%, #b2b6ae 72%, #6e726b 100%);
+  --metal-grad-soft: linear-gradient(90deg, rgba(210,212,205,0) 0%, var(--platinum-400) 50%, rgba(210,212,205,0) 100%);
+
+  /* ===========================================================
+     SEMANTIC ALIASES — reference these in product code
+     =========================================================== */
+
+  /* Surfaces */
+  --surface-deep:   var(--emerald-900);  /* darkest sections, footer */
+  --surface-brand:  var(--emerald-700);  /* hero, brand panels */
+  --surface-raised: #112e26;             /* cards on emerald */
+  --surface-light:  var(--ivory);        /* default light page */
+  --surface-paper:  var(--paper);        /* cards on light */
+  --surface-sand:   var(--sand-100);     /* alternating light section */
+
+  /* Text on dark surfaces */
+  --text-on-dark:        var(--platinum-100);
+  --text-on-dark-strong: #ffffff;
+  --text-on-dark-muted:  var(--emerald-200);
+  --text-on-dark-faint:  var(--platinum-600);
+
+  /* Text on light surfaces */
+  --text-strong: var(--ink-900);
+  --text-body:   var(--ink-700);
+  --text-muted:  var(--ink-500);
+  --text-faint:  var(--ink-400);
+
+  /* Accents */
+  --accent:        var(--emerald-700); /* primary interactive on light */
+  --accent-hover:  var(--emerald-600);
+  --accent-active: var(--emerald-800);
+  --metal:         var(--platinum-500); /* metallic emphasis */
+  --metal-bright:  var(--platinum-300);
+
+  /* Borders & hairlines */
+  --hairline-on-light:  rgba(19, 32, 28, 0.12);
+  --hairline-on-light-strong: rgba(19, 32, 28, 0.22);
+  --hairline-on-dark:   rgba(240, 241, 236, 0.14);
+  --hairline-on-dark-strong: rgba(240, 241, 236, 0.28);
+  --border-metal:       var(--platinum-500);
+
+  /* Focus */
+  --focus-ring: 0 0 0 2px var(--ivory), 0 0 0 4px var(--emerald-500);
+  --focus-ring-dark: 0 0 0 2px var(--emerald-900), 0 0 0 4px var(--platinum-400);
+
+  /* Semantic status (kept restrained, green-family) */
+  --success: #2e826a;
+  --danger:  #a8443a;
+  --warning: #b08842;
+  --info:    var(--emerald-500);
+}

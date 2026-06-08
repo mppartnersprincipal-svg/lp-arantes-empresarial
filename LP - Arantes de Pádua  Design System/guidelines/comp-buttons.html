@@ -1,0 +1,37 @@
+<!-- @dsCard group="Components" viewport="700x230" name="Buttons" subtitle="Primary, ghost, metal & link — on light and emerald" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../components.css">
+<style>
+  body { margin: 0; display: grid; grid-template-columns: 1fr 1fr; }
+  .pane { padding: 30px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+  .light { background: var(--ivory); }
+  .dark { background: var(--surface-brand); }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .arrow { width:16px;height:16px; }
+</style>
+</head>
+<body>
+  <div class="pane light">
+    <div class="row">
+      <a class="btn btn--primary">Falar com o escritório</a>
+      <a class="btn btn--ghost">Áreas de atuação</a>
+    </div>
+    <a class="link-arrow">Conheça os sócios
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="pane dark on-dark">
+    <div class="row">
+      <a class="btn btn--primary">Agendar reunião</a>
+      <a class="btn btn--ghost">Saiba mais</a>
+    </div>
+    <a class="link-arrow">Nossa atuação
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</body>
+</html>

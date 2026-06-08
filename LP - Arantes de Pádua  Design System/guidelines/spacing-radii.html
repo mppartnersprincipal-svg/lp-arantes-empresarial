@@ -1,0 +1,28 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Corner radii" subtitle="Crisp & editorial — buttons stay near-square" -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; background: var(--ivory); padding: 24px 28px; }
+  .meta { font-family: var(--font-sans); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-faint); margin: 0 0 18px; }
+  .row { display: flex; gap: 22px; align-items: flex-end; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .box { width: 72px; height: 56px; background: var(--surface-paper); border: 1px solid var(--hairline-on-light-strong); box-shadow: var(--shadow-xs); }
+  .lab { font-family: var(--font-sans); font-size: 10px; color: var(--text-muted); letter-spacing: .04em; }
+  .px { font-family: var(--font-mono); font-size: 9px; color: var(--text-faint); }
+</style>
+</head>
+<body>
+  <p class="meta">Radii · --r-*</p>
+  <div class="row">
+    <div class="item"><div class="box" style="border-radius:2px"></div><span class="lab">xs</span><span class="px">2px</span></div>
+    <div class="item"><div class="box" style="border-radius:4px"></div><span class="lab">sm</span><span class="px">4px</span></div>
+    <div class="item"><div class="box" style="border-radius:8px"></div><span class="lab">md</span><span class="px">8px</span></div>
+    <div class="item"><div class="box" style="border-radius:12px"></div><span class="lab">lg</span><span class="px">12px</span></div>
+    <div class="item"><div class="box" style="border-radius:18px"></div><span class="lab">xl</span><span class="px">18px</span></div>
+    <div class="item"><div class="box" style="border-radius:999px;width:96px"></div><span class="lab">pill</span><span class="px">rare</span></div>
+  </div>
+</body>
+</html>
