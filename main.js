@@ -249,6 +249,7 @@
       ".impact-card",
       ".area-card",
       ".process-step",
+      ".lawyer-card",
       ".value",
       ".faq__item",
       ".problema__grid > div",

@@ -407,6 +407,47 @@ section[id], main[id] { scroll-margin-top: 84px; }
 .process-step p { font-family: var(--font-body); font-size: var(--fs-sm); line-height: 1.6; color: var(--text-on-dark-muted); }
 .process__cta { margin-top: 56px; display: flex; }
 
+/* ---------- SÓCIOS / ADVOGADOS ---------- */
+.lawyers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 56px; }
+.lawyer-card {
+  display: grid; grid-template-columns: 0.82fr 1fr; align-items: stretch;
+  background: var(--surface-paper); border: 1px solid var(--hairline-on-light);
+  border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out), border-color var(--dur-base) var(--ease-out);
+}
+.lawyer-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--hairline-on-light-strong); }
+.lawyer-card__photo { position: relative; min-height: 100%; background: var(--emerald-800); }
+.lawyer-card__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.lawyer-card__photo::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(5,23,18,.28) 100%);
+}
+.lawyer-card__body { padding: 34px 32px; display: flex; flex-direction: column; }
+.lawyer-card__role {
+  font-family: var(--font-sans); font-weight: var(--fw-medium); font-size: var(--fs-eyebrow);
+  letter-spacing: var(--tr-eyebrow); text-transform: uppercase; color: var(--emerald-600);
+}
+.lawyer-card h3 {
+  font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: var(--fs-h4);
+  color: var(--text-strong); line-height: 1.15; margin: 12px 0 14px;
+}
+.lawyer-card__oab {
+  align-self: flex-start;
+  font-family: var(--font-sans); font-weight: var(--fw-medium); font-size: 11px;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-900);
+  background: var(--metal-grad); border-radius: var(--r-pill);
+  padding: 6px 14px; box-shadow: var(--shadow-xs);
+}
+.lawyer-card__creds {
+  margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--hairline-on-light);
+  display: flex; flex-direction: column; gap: 12px;
+}
+.lawyer-card__creds li {
+  display: flex; gap: 11px; align-items: flex-start;
+  font-family: var(--font-body); font-size: var(--fs-sm); line-height: 1.5; color: var(--text-body);
+}
+.lawyer-card__creds svg { width: 16px; height: 16px; flex: none; margin-top: 3px; color: var(--emerald-500); }
+
 /* ---------- FAIXA DE CTA (dobras de seção) ---------- */
 .section-cta {
   margin-top: 64px;
@@ -516,7 +557,10 @@ section[id], main[id] { scroll-margin-top: 84px; }
 
 /* ---------- WHATSAPP FLOAT ---------- */
 .wa-float {
-  position: fixed; right: 22px; bottom: 22px; z-index: 60;
+  position: fixed;
+  right: max(22px, env(safe-area-inset-right));
+  bottom: max(22px, env(safe-area-inset-bottom));
+  z-index: 60;
   width: 60px; height: 60px; border-radius: var(--r-pill);
   background: var(--whatsapp); color: #fff;
   display: inline-flex; align-items: center; justify-content: center;
@@ -544,11 +588,12 @@ section[id], main[id] { scroll-margin-top: 84px; }
   .nav__links { display: none; }
   .nav__toggle { display: inline-flex; }
   .hero__grid { grid-template-columns: 1fr; gap: 56px; }
-  .hero__photo { order: -1; max-width: 520px; }
+  .hero__photo { order: -1; max-width: 520px; margin-inline: auto; width: 100%; }
   .problema__grid { grid-template-columns: 1fr; gap: 44px; }
   .practice-grid { grid-template-columns: 1fr 1fr; }
   .process-grid { grid-template-columns: 1fr 1fr 1fr; gap: 28px; }
   .values-grid { grid-template-columns: 1fr 1fr; }
+  .lawyers-grid { grid-template-columns: 1fr; }
   .contact__grid { grid-template-columns: 1fr; gap: 48px; }
   .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .footer__brand { grid-column: 1 / -1; }
@@ -570,6 +615,8 @@ section[id], main[id] { scroll-margin-top: 84px; }
   .process-grid { grid-template-columns: 1fr; gap: 4px; }
   .process-step { border-top: none; border-left: 1px solid var(--hairline-on-dark-strong); padding: 4px 0 24px 22px; }
   .values-grid { grid-template-columns: 1fr; }
+  .lawyer-card { grid-template-columns: 1fr; }
+  .lawyer-card__photo { aspect-ratio: 4 / 3; min-height: 0; }
   .footer__grid { grid-template-columns: 1fr; gap: 36px; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
   .hero { padding-top: 120px; }
