@@ -258,7 +258,7 @@ João Paulo Elias de Pádua — OAB/GO 64.110
 Matheus Arantes e Silva Pereira — OAB/GO 57.995
 
 Edifício Aquarius Center Empresarial
-R. T-36, St. Bueno — Goiânia/GO, 74230-105
+R. T-36, nº 3.182, St. Bueno — Goiânia/GO, 74223-052
 12º andar, sala 1.208
 
 (62) 99911-3757
@@ -356,7 +356,7 @@ Itens que dependem do cliente ou de definição antes do go-live:
 
 - **Escritório:** Arantes de Pádua Advogados — +3 anos (sócios somam +10 anos de atuação).
 - **Sócios:** João Paulo Elias de Pádua (OAB/GO 64.110) e Matheus Arantes e Silva Pereira (OAB/GO 57.995).
-- **Endereço:** Edifício Aquarius Center Empresarial — R. T-36, St. Bueno, Goiânia/GO, 74230-105, 12º andar, sala 1.208.
+- **Endereço:** Edifício Aquarius Center Empresarial — R. T-36, nº 3.182, St. Bueno, Goiânia/GO, 74223-052, 12º andar, sala 1.208.
 - **Contato:** (62) 99911-3757 • arantesdepadua@outlook.com • @arantesdepadua.
 - **Decisores:** os dois sócios.
 - **Público:** exclusivamente PJ, com necessidade recorrente de recuperação de crédito.
