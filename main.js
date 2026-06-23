@@ -139,7 +139,12 @@
     }
 
     // Dispara conversão (seção 8): Google generate_lead / Meta Lead
-    track("generate_lead", { method: "whatsapp_form", fb_event: "Lead" });
+    track("generate_lead", {
+      method: "whatsapp_form",
+      form_id: "leadForm",
+      button_text: "Enviar pelo WhatsApp",
+      fb_event: "Lead"
+    });
 
     // Monta a mensagem pré-preenchida
     var texto =
