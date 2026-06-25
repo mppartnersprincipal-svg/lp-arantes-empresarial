@@ -221,11 +221,11 @@ Seções marcadas com 🔵 são **recomendações** derivadas do objetivo declar
 2. **Vou gastar mais do que vou recuperar?**
    Antes de qualquer medida, fazemos um diagnóstico do caso — documentação, perfil do devedor e viabilidade. Com base nisso, indicamos a estratégia mais adequada e o custo-benefício de cada caminho, para você decidir com clareza.
 
-3. **Quais empresas vocês atendem?**
-   Atuamos exclusivamente para empresas (Pessoa Jurídica), de micro e pequenas a médias e grandes, em diversos segmentos — comércio, serviços, indústria, distribuidoras, transporte e logística, saúde, educação, imobiliárias, tecnologia, agronegócio e outros.
+3. **Quem vocês atendem?**
+   Atendemos empresas (Pessoa Jurídica) de todos os portes — de micro e pequenas a médias e grandes, em diversos segmentos como comércio, serviços, indústria, distribuidoras, transporte e logística, saúde, educação, imobiliárias, tecnologia e agronegócio — e também pessoas físicas com carteira de inadimplência a recuperar.
 
 4. **Vocês atendem em todo o Brasil?**
-   Sim. Atendemos empresas em todo o território nacional.
+   Sim. Atendemos clientes em todo o território nacional.
 
 5. **Quais documentos preciso reunir?**
    Em geral, contratos, notas promissórias, cheques, duplicatas, confissões de dívida e demais documentos que comprovem o crédito. No diagnóstico inicial orientamos exatamente o que é necessário para o seu caso.
@@ -359,6 +359,6 @@ Itens que dependem do cliente ou de definição antes do go-live:
 - **Endereço:** Edifício Aquarius Center Empresarial — R. T-36, nº 3.182, St. Bueno, Goiânia/GO, 74223-052, 12º andar, sala 1.208.
 - **Contato:** (62) 99911-3757 • arantesdepadua@outlook.com • @arantesdepadua.
 - **Decisores:** os dois sócios.
-- **Público:** exclusivamente PJ, com necessidade recorrente de recuperação de crédito.
+- **Público:** empresas (PJ) com necessidade recorrente de recuperação de crédito e, também, pessoas físicas com carteira de inadimplência a recuperar.
 - **Principal dor:** perda de ativos por inadimplência, comprometendo fluxo de caixa, previsibilidade e crescimento.
 - **Principal objeção:** "Vou gastar mais do que vou recuperar."
